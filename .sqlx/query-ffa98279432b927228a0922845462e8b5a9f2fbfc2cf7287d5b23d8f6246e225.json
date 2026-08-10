@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT i.name, i.description FROM item_ownership io\n            INNER JOIN items i on id = item_id\n            WHERE io.user_id = $1",
+  "describe": {
+    "columns": [
+      {
+        "name": "name",
+        "ordinal": 0,
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "items",
+            "name": "name"
+          }
+        }
+      },
+      {
+        "name": "description",
+        "ordinal": 1,
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "items",
+            "name": "description"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "ffa98279432b927228a0922845462e8b5a9f2fbfc2cf7287d5b23d8f6246e225"
+}

@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT money FROM users WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "name": "money",
+        "ordinal": 0,
+        "type_info": "Integer",
+        "origin": {
+          "Table": {
+            "table": "users",
+            "name": "money"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "082b0c606baa1e571d51f20dce59b8490ae44320dc7ee89d0ef3ae518df85550"
+}

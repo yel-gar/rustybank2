@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "DELETE FROM item_ownership WHERE ROWID = (\n                SELECT ROWID FROM item_ownership WHERE user_id = $1 AND item_id = $2\n                LIMIT 1\n            )",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "07dd2cb4bc39100af0400d4f318366d0ec047ae58aad8776100de71c69ddadaf"
+}

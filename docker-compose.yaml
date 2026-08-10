@@ -1,0 +1,11 @@
+services:
+  rustybank2:
+    build:
+      context: .
+      args:
+        - FLAG=${FLAG:?please set the flag}
+    restart: unless-stopped
+    ports:
+      - "${PUBLIC_PORT:?}:8080/udp"
+    mem_limit: 128m
+    cpus: 0.5

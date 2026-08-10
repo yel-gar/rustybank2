@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT price FROM items WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "name": "price",
+        "ordinal": 0,
+        "type_info": "Integer",
+        "origin": {
+          "Table": {
+            "table": "items",
+            "name": "price"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "31a24fbd6db4db36623b3628f0547521ec059a203d189b8902a26f8f3a6b8d70"
+}

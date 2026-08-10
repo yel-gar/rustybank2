@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT can_work_at FROM users WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "name": "can_work_at",
+        "ordinal": 0,
+        "type_info": "Integer",
+        "origin": {
+          "Table": {
+            "table": "users",
+            "name": "can_work_at"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "df185a9ea1cfcca2616e81f2bb00913c10533796ab86a10a12445bf021f53786"
+}

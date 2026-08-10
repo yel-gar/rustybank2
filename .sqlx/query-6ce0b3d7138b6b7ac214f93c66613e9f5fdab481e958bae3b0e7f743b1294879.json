@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO item_ownership (item_id, user_id) VALUES ($1, $2)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "6ce0b3d7138b6b7ac214f93c66613e9f5fdab481e958bae3b0e7f743b1294879"
+}

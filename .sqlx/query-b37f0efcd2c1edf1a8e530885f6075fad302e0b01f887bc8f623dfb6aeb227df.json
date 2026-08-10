@@ -1,0 +1,21 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT EXISTS(SELECT 1 FROM item_ownership WHERE user_id = $1 AND item_id = $2) AS 'ex:bool'",
+  "describe": {
+    "columns": [
+      {
+        "name": "ex:bool",
+        "ordinal": 0,
+        "type_info": "Integer",
+        "origin": "Expression"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "b37f0efcd2c1edf1a8e530885f6075fad302e0b01f887bc8f623dfb6aeb227df"
+}
